@@ -37,4 +37,50 @@ var englishMark = 80;
 var mathMark = 50;
 
 var result = avg(banglaMark, englishMark, mathMark);
-document.write("Total avgerss is " + result.toFixed(2));
+document.write("Total avgerss is " + result.toFixed(2) + br);
+//ends
+
+//object create
+var person ={
+    name: "Shangida Khatun",
+    height: "5 fut",
+    weight: "40kg",
+    etyeColor: "bule"
+}
+//display the output in object
+document.write("Name is " + person.name + br);
+document.write("Weight is " + person.weight + br);
+console.log(person);
+//ends
+
+// students details  using object
+var students1 ={
+    id: 111,
+    name: "Shangida",
+    sesion: "2017 - 18",
+
+}
+
+var students2 ={
+    id: 112,
+    name: "Arifa",
+    sesion: "2017 - 18",
+    
+}
+
+var students3 ={
+    id: 113,
+    name: "Nabila",
+    sesion: "2017 - 18",
+    
+}
+
+document.write("Student1 name is " + students1.name + br);
+document.write("Student2 name is " + students2.name + br);
+document.write("Student3 name is " + students3.name + br);
+
+document.write("Student1 id is " + students1.id + br);
+document.write("Student2 id is " + students2.id + br);
+document.write("Student3 is is " + students3.id + br);
+
+document.write("students sesion is " + students1.sesion + br);
