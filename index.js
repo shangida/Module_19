@@ -145,4 +145,37 @@ var computer = {
 
 var porperty = Object.keys(computer);
 console.log(porperty);
+//ends
 
+//Task 01 strats
+function foo()
+{
+    document.write("print the " + "foo");
+}
+foo();
+
+function bar()
+{
+    document.write("print the " + "bar");
+
+}
+bar();
+//ends
+
+function make_avg()
+{
+    var num1 = 20;
+    var num2 = 35;
+    var num3 = 15;
+
+    var sum = num1 + num2 + num3;
+    var total_avg = sum / 3;
+    return total_avg;
+
+}
+var result = make_avg();
+document.write("Total avg is " + result.toFixed(2));
+
+
+
+ 
