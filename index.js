@@ -45,10 +45,14 @@ var person ={
     name: "Shangida Khatun",
     height: "5 fut",
     weight: "40kg",
-    etyeColor: "bule"
+    eyeColor: "bule"
 }
+
+var eye_color = person["eyeColor"];
+
 //display the output in object
 document.write("Name is " + person.name + br);
+document.write("eye color is " + eye_color + br);
 document.write("Weight is " + person.weight + br);
 console.log(person);
 //ends
@@ -84,3 +88,61 @@ document.write("Student2 id is " + students2.id + br);
 document.write("Student3 is is " + students3.id + br);
 
 document.write("students sesion is " + students1.sesion + br);
+//ends
+
+//shoping cart program using object
+var shopingCart ={
+    books: 5,
+    pens: 2,
+    note_book: 6,
+    galss: 2,
+    mouse: 4
+}
+
+var booksCount = shopingCart["books"];
+var noteBookCount = shopingCart["note_book"];
+var galssCount = shopingCart.galss;
+
+document.write("Total books is " + booksCount + br);
+document.write("Total note books is " + noteBookCount + br);
+document.write("Total glass is " + galssCount + br);
+
+//return properties name or keys name in object 
+var porpertices = Object.keys(shopingCart);
+document.write(porpertices + br);
+
+//reten properties values or kyes values in object
+document.write(Object.values(shopingCart) + br);
+
+//when properties name put the variables, get the properties values
+var propertiesName = "pens";
+var propertiesValues = shopingCart[propertiesName];
+document.write(propertiesName, propertiesValues + br);
+
+var propertiesName ="books"
+var propertiesValues =shopingCart[propertiesName]
+//var propertiesValues =shopingCart.propertiesName // error
+document.write(propertiesValues + br);
+
+//set the property values
+console.log(shopingCart);
+
+shopingCart.galss = 3;
+console.log(shopingCart);
+
+console.log(shopingCart.books);
+
+shopingCart["books"] = 10;
+console.log(shopingCart["books"]);
+
+//object looping js
+var computer = {
+    monitor: "DELL",
+    procesor: "giga byte",
+    mouse: "fastkey",
+    keybroad: "dell"
+}
+
+var porperty = Object.keys(computer);
+console.log(porperty);
+
