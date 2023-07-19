@@ -174,8 +174,64 @@ function make_avg()
 
 }
 var result = make_avg();
-document.write("Total avg is " + result.toFixed(2));
+document.write("Total avg is " + result.toFixed(2) + br);
+//ends
 
 
 
- 
+ // function constrator strats
+ //contrator create
+ function Student(id, name, cgpa, deperment)
+ {
+    this.id = id;
+    this.name = name;
+    this.cgpa = cgpa;
+    this.deperment = deperment
+
+ }
+
+ //create a object
+ var students1 = new Student(111, "Shangida Khatn", 4.33, "Marketing");
+ var students2 = new Student(112, "Nabila Akter", 4.08, "Bangla");
+ var students3 = new Student(113, "Sumaiya Akter", 5.00, "English");
+
+ //show the print in a object
+document.write("Student1 name is " + students1.name  + br);
+document.write("Student1 cgpa is " + students1["cgpa"] + br);
+
+var student2Id = students2.id
+document.write("studentr2 id is " + student2Id + br);
+document.write("student2 deperment is " + students2["deperment"] + br);
+
+document.write("student3 name is " + students3["name"] + br);
+document.write("student3 cgpa is " + students3.cgpa + br);
+//ends
+
+//adding function inside a construtor
+function Person(name, height, weight, eye_color)
+{
+    this.name = name;
+    this.height = height;
+    this.weight = weight;
+    this.eye_color = eye_color;
+
+    this.display = function()
+    {
+        console. log(this.name);
+        console.log(this.height);
+        console.log(this.weight);
+        console.log(this.eye_color);
+        console.log(this.display);
+
+        
+    }
+
+}
+
+//create a object
+var person1 = new Person("Ritu", "5 fut", "40 kg", "bule");
+var person2 =  new Person("Nabila", "6 fut", "50 kg", "bule");
+
+//calling a function
+person1.display();
+person2.display();
